@@ -49,8 +49,11 @@ render (){
             label='password'
             required
           />
+          <div className='buttons'>
                <CustomButton type="submit">Sign In</CustomButton>
-               <CustomButton onClick={SignInWithGoogle}>Sign In with Google</CustomButton>
+               <CustomButton isGoogleSignIn onClick={SignInWithGoogle}>Sign In with Google</CustomButton>
+          </div>
+              
            </form>
        </div> 
     )
