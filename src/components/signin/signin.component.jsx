@@ -62,7 +62,7 @@ render (){
           />
           <div className='buttons'>
                <CustomButton type="submit">Sign In</CustomButton>
-               <CustomButton isGoogleSignIn onClick={SignInWithGoogle}>Sign In with Google</CustomButton>
+               <CustomButton type="button" isGoogleSignIn onClick={SignInWithGoogle}>Sign In with Google</CustomButton>
           </div>
               
            </form>
