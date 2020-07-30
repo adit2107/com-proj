@@ -8,6 +8,9 @@ import {auth} from '../../firebase/firebase.utils'
 
 import './header.styles.scss';
 
+// Adding redux using connect() and transforming Header into a HOC
+import {connect} from 'react-redux';
+
 const Header = ({ currentUser }) => (
     <div className='header'>
         <Link className='logo-container' to='/'>
@@ -25,6 +28,10 @@ const Header = ({ currentUser }) => (
         }
         </div>
     </div>
-)
+);
 
-export default Header;
+const mapStateToProps = state => ({
+    currentUser: state.user.currentUser
+})
+
+export default connect(mapStateToProps)(Header);
