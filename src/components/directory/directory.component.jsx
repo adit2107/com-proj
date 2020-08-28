@@ -2,12 +2,6 @@ import React from 'react';
 
 import MenuItem from '../menu-item/menu-item.component';
 
-import Biscuit from '../../assets/images/biscuit.jpg';
-import Bread from '../../assets/images/bread.jpg';
-import Brownie from '../../assets/images/brownie.jpg';
-import Cake from '../../assets/images/cake.jpg';
-import Cookies from '../../assets/images/cookies.jpg';
-
 import './directory.styles.scss';
 
 class Directory extends React.Component {
@@ -18,29 +12,29 @@ class Directory extends React.Component {
         this.state = {
             sections: [{
                 title: 'biscuits',
-                imageUrl: Biscuit,
+                imageUrl: require('../../assets/images/biscuit.jpg'),
                 id: 1,
                 linkUrl:'biscuits'
               },
               {
                 title: 'cookies',
-                imageUrl: Cookies,
+                imageUrl: require('../../assets/images/cookies.jpg'),
                 id: 2
               },
               {
                 title:'bread',
-                imageUrl: Bread,
+                imageUrl: require('../../assets/images/bread.jpg'),
                 id: 3
               },
               {
                 title: 'brownies',
-                imageUrl: Brownie,
+                imageUrl: require('../../assets/images/brownie.jpg'),
                 size: 'large',
                 id: 4
               },
               {
                 title: 'cakes',
-                imageUrl: Cake,
+                imageUrl: require('../../assets/images/cake.jpg'),
                 size: 'large',
                 id: 5
               }]
