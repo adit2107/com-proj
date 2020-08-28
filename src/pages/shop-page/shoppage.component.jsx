@@ -1,7 +1,5 @@
 import React from 'react';
 
-import {SHOP_DATA} from './shopdata';
-
 import CollectionPreview from '../../components/collection-preview/collection-preview.component'
 
 class ShopPage extends React.Component {
@@ -9,7 +7,7 @@ class ShopPage extends React.Component {
         super(props);
 
         this.state = {
-            collections: SHOP_DATA
+            
         }
     }
 

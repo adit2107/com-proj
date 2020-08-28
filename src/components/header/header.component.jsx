@@ -2,13 +2,12 @@ import React from 'react';
 
 import { Link } from 'react-router-dom';
 
-import { ReactComponent as Logo } from '../../assets/crown.svg'
+import { ReactComponent as Logo } from '../../assets/logo_bake.svg'
 
 import {auth} from '../../firebase/firebase.utils'
 
 import './header.styles.scss';
 
-// Adding redux using connect() and transforming Header into a HOC
 import {connect} from 'react-redux';
 
 const Header = ({ currentUser }) => (

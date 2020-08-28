@@ -55,7 +55,6 @@ class App extends React.Component {
      
     );
   }
- 
 }
 
 const mapDispatchToProps = dispatch => ({

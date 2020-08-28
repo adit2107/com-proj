@@ -2,39 +2,45 @@ import React from 'react';
 
 import MenuItem from '../menu-item/menu-item.component';
 
+import Biscuit from '../../assets/images/biscuit.jpg';
+import Bread from '../../assets/images/bread.jpg';
+import Brownie from '../../assets/images/brownie.jpg';
+import Cake from '../../assets/images/cake.jpg';
+import Cookies from '../../assets/images/cookies.jpg';
+
 import './directory.styles.scss';
 
 class Directory extends React.Component {
 
     constructor(){
         super();
-
+        // TODO: Add dynamic imports
         this.state = {
             sections: [{
-                title: 'hats',
-                imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
+                title: 'biscuits',
+                imageUrl: Biscuit,
                 id: 1,
-                linkUrl:'hats'
+                linkUrl:'biscuits'
               },
               {
-                title: 'jackets',
-                imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
+                title: 'cookies',
+                imageUrl: Cookies,
                 id: 2
               },
               {
-                title: 'sneakers',
-                imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
+                title:'bread',
+                imageUrl: Bread,
                 id: 3
               },
               {
-                title: 'womens',
-                imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
+                title: 'brownies',
+                imageUrl: Brownie,
                 size: 'large',
                 id: 4
               },
               {
-                title: 'mens',
-                imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
+                title: 'cakes',
+                imageUrl: Cake,
                 size: 'large',
                 id: 5
               }]
