@@ -7,8 +7,15 @@
     margin-bottom: 25px;
   
     .logo-container {
+
+      .logo {
+        margin-top: -10px;
+        padding-right: 5px;
+      }
+
+      display: flex;
       height: 100%;
-      width: 70px;
+      width: 100%;
       padding: 25px 15px;
     }
   

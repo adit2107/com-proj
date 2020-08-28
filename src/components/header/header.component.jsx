@@ -13,7 +13,7 @@ import {connect} from 'react-redux';
 const Header = ({ currentUser }) => (
     <div className='header'>
         <Link className='logo-container' to='/'>
-            <Logo className='logo' />
+            <Logo className='logo' /> THE HOME BAKERY
         </Link>
         <div className='options'>
         <Link className='option' to='/shop'>
