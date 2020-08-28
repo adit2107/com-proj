@@ -33,7 +33,7 @@ class Directory extends React.Component {
                 id: 4
               },
               {
-                title: 'cakes',
+                title: 'cake',
                 imageUrl: require('../../assets/images/cake.jpg'),
                 size: 'large',
                 id: 5
