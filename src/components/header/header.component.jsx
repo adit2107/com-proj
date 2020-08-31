@@ -8,9 +8,12 @@ import {auth} from '../../firebase/firebase.utils'
 
 import './header.styles.scss';
 
-import {connect} from 'react-redux';
+import {useSelector} from 'react-redux';
 
-const Header = ({ currentUser }) => (
+const Header = ({ currentUser }) => {
+    const curUser = useSelector(state => state.user.currentUser);
+
+    return (
     <div className='header'>
         <Link className='logo-container' to='/'>
             <Logo className='logo' /> THE HOME BAKERY
@@ -23,14 +26,10 @@ const Header = ({ currentUser }) => (
             CONTACT
         </Link>
         {
-            currentUser ? (<div className='option' onClick={() => auth.signOut()}>SIGN OUT</div>) : (<Link className='option' to='/signIn'>SIGN IN</Link>)
+            curUser ? (<div className='option' onClick={() => auth.signOut()}>SIGN OUT</div>) : (<Link className='option' to='/signIn'>SIGN IN</Link>)
         }
         </div>
     </div>
-);
+)};
 
-const mapStateToProps = state => ({
-    currentUser: state.user.currentUser
-})
-
-export default connect(mapStateToProps)(Header);
+export default Header;

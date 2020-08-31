@@ -3,14 +3,16 @@ import 'firebase/firestore';
 import 'firebase/auth';
 
 const config = {
-    apiKey: "AIzaSyD7nHTQ-1F0y-JEjHOypunPnXn3y5K9BZU",
-    authDomain: "crowncomproj.firebaseapp.com",
-    databaseURL: "https://crowncomproj.firebaseio.com",
-    projectId: "crowncomproj",
-    storageBucket: "crowncomproj.appspot.com",
-    messagingSenderId: "367379821689",
-    appId: "1:367379821689:web:fc66f50c354e131988d0a8"
-  };
+  apiKey: "AIzaSyCuDkSFU9_puBSbDAVkI_f8zlvIEgPCrY4",
+  authDomain: "hbakery-79db5.firebaseapp.com",
+  databaseURL: "https://hbakery-79db5.firebaseio.com",
+  projectId: "hbakery-79db5",
+  storageBucket: "hbakery-79db5.appspot.com",
+  messagingSenderId: "994380590011",
+  appId: "1:994380590011:web:bc9fe4ba06a2625051729e",
+  measurementId: "G-272Q996JW5"
+};
+
 
   export const createUserProfileDocument = async (userAuth, additionalData) => {
     if (!userAuth) return;
