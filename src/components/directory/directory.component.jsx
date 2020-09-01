@@ -22,19 +22,19 @@ class Directory extends React.Component {
                 id: 2
               },
               {
-                title:'bread',
-                imageUrl: require('../../assets/images/bread.jpg'),
+                title: 'cake',
+                imageUrl: require('../../assets/images/bcake.jpg'),
                 id: 3
               },
               {
-                title: 'brownies',
-                imageUrl: require('../../assets/images/brownie.jpg'),
+                title: 'Surprise Me',
+                imageUrl: require('../../assets/images/gift-box.jpg'),
                 size: 'large',
                 id: 4
               },
               {
-                title: 'cake',
-                imageUrl: require('../../assets/images/cake.jpg'),
+                title: 'Assortment Box',
+                imageUrl: require('../../assets/images/assortment.jpg'),
                 size: 'large',
                 id: 5
               }]
